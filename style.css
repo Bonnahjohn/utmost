@@ -3,13 +3,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 /* mmmmmmmmmmmmmmmm luxury styling mmmmmmmmmmmmmmmm*/
 .lux-wrapper {
   position: relative;
 }
 .lux {
-  width: 100%;
+  width: 400px;
   height: 100%;
 }
 .lux-cover {
@@ -59,4 +60,18 @@ body {
 }
 .deco-cover:hover {
   opacity: 1;
+}
+/* mmmmmmmmmmmmmmmmmmmmmmmm explore styling mmmmmmmmmmmmmmmmmmmmm */
+.exp-top {
+  margin-top: 80px;
+}
+
+button.nav-link {
+  color: black;
+}
+
+.nav-tabs .active {
+  color: orange !important;
+  border: none !important;
+  outline: none;
 }

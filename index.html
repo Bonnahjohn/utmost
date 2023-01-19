@@ -10,15 +10,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- mmmmmmmmmmmmmmmmmmmm   luxur flex image mmmmmmmmmmmmmmmmmm -->
     <section class="container mt-5">
-      <div class="d-flex flex-lg-row flex-md-row flex-column">
-        <div class="p-2 lux-wrapper">
-          <img src="assets/luxury.jpg" class="w-100 lux" alt="luxur living" />
+      <div
+        class="d-flex flex-lg-row flex-md-row flex-column flex-column justify-content-around"
+      >
+        <div class="p-2 lux-wrapper flex-fill">
+          <img
+            src="assets/luxury.jpg"
+            class="w-100 lux h-100"
+            alt="luxur living"
+          />
           <div class="lux-cover">
             <div class="lux-text">
-              <h4 class="fs-2">
+              <h2 class="fs-2">
                 Inspired luxury living <br />at your finger tips.
-              </h4>
+              </h2>
               <a
                 href="#S"
                 role="button"
@@ -28,13 +35,13 @@
             </div>
           </div>
         </div>
-        <div class="p-2 deco-wrapper">
-          <img src="assets/luxury.jpg" class="w-100 lux" alt="luxur living" />
+        <div class="p-2 deco-wrapper flex-fill">
+          <img src="assets/decor.jpg" class="w-100 lux" alt="luxur living" />
           <div class="deco-cover">
             <div class="deco-text">
-              <h4 class="fs-2">
+              <h2 class="fs-2">
                 Discover the ultimate <br />home decor collection.
-              </h4>
+              </h2>
               <a
                 href="#S"
                 role="button"
@@ -42,6 +49,677 @@
                 >Shop Now</a
               >
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- mmmmmmmmmmmmmmmmmmmm   explore by category mmmmmmmmmmmmmmmmmm -->
+    <section class="container exp-top">
+      <h3 class="text-center display-5">Explore by category</h3>
+      <!-- flex picture tabs -->
+      <div
+        class="d-flex align-items-start justify-content-lg-between justify-content-around justify-content-md-around"
+      >
+        <div
+          class="nav flex-column nav-tabs me-3 border-0"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          <ul class="list-unstyled mt-5" id="list">
+            <li class="list">
+              <input
+                class="btn btn-outline-warning bg-light mb-5 input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </li>
+            <li class="list">
+              <button
+                class="nav-link mb-3"
+                id="v-pills-bedroom-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-bedroom"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-bedroom"
+                aria-selected="false"
+              >
+                Bedroom
+              </button>
+            </li>
+            <li class="list">
+              <button
+                class="nav-link mb-3"
+                id="v-pills-dinning-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-dinning"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-dinning"
+                aria-selected="false"
+              >
+                Dinning Room
+              </button>
+            </li>
+            <li class="list">
+              <button
+                class="nav-link mb-3"
+                id="v-pills-meeting-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-meeting"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-meeting"
+                aria-selected="false"
+              >
+                Meeting Room
+              </button>
+            </li>
+            <li class="list">
+              <button
+                class="nav-link mb-3"
+                id="v-pills-Workspace-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-Workspace"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-Workspace"
+                aria-selected="false"
+              >
+                Workspace
+              </button>
+            </li>
+            <li class="list">
+              <button
+                class="nav-link mb-3"
+                id="v-pills-room-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-room"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-room"
+                aria-selected="false"
+              >
+                Living Room
+              </button>
+            </li>
+            <li class="list">
+              <button
+                class="nav-link mb-3"
+                id="v-pills-kitechen-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-kitchen"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-kitchen"
+                aria-selected="false"
+              >
+                Kitchen
+              </button>
+            </li>
+            <li class="list">
+              <button
+                class="nav-link mb-5"
+                id="v-pills-living-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-living"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-living"
+                aria-selected="false"
+              >
+                Living Space
+              </button>
+            </li>
+            <li class="list">
+              <button
+                class="nav-link active btn btn-outline-warning border-warning text-dark rounded-0"
+                id="v-pills-categories-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-categories"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-categories"
+                aria-selected="true"
+              >
+                All Categories
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content ms-5" id="v-pills-tabContent">
+          <div
+            class="tab-pane fade"
+            id="v-pills-bedroom"
+            role="tabpanel"
+            aria-labelledby="v-pills-bedroom-tab"
+            tabindex="0"
+          >
+            <!--mmmmmmmmmmmmm custom styling  of the bedroom mmmmmmmmmmmmmmm-->
+
+            <div class="d-flex flex-row mb-0 w-100 flex-lg-row mt-5">
+              <div class="p-2">
+                <img
+                  src="assets/bed1.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/bed2.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <!--mmmmmmmmmmmmmmmmmmm gallery flex wrappers  mmmmmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/bed3.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/bed4.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/bed5.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/bed6.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+
+            <!--mmmmmmmmmmmmm custom styling  of  bedroom mmmmmmmmmmmmmmm-->
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-dinning"
+            role="tabpanel"
+            aria-labelledby="v-pills-dinning-tab"
+            tabindex="0"
+          >
+            <!--mmmmmmmmmmmmm custom styling  of the dinning room mmmmmmmmmmmmmmm-->
+
+            <div class="d-flex flex-row mb-0 w-100 flex-lg-row mt-5">
+              <div class="p-2">
+                <img
+                  src="assets/dinning1.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/dinning2.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <!--mmmmmmmmmmmmmmmmmmm gallery flex wrappers  mmmmmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/dinning3.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/dinning4.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/dinning5.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/dinning6.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+
+            <!--mmmmmmmmmmmmm custom styling  of dinning room mmmmmmmmmmmmmmm-->
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-meeting"
+            role="tabpanel"
+            aria-labelledby="v-pills-meeting-tab"
+            tabindex="0"
+          >
+            <!--mmmmmmmmmmmmm custom styling  of the meeting mmmmmmmmmmmmmmm-->
+
+            <div class="d-flex flex-row mb-0 w-100 flex-lg-row mt-5">
+              <div class="p-2">
+                <img
+                  src="assets/meeting1.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/meeting2.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <!--mmmmmmmmmmmmmmmmmmm gallery flex wrappers  mmmmmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/meeting3.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/meeting4.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/meeting5.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/meeting6.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+
+            <!--mmmmmmmmmmmmm custom styling  of meeting mmmmmmmmmmmmmmm-->
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-Workspace"
+            role="tabpanel"
+            aria-labelledby="v-pills-Workspace-tab"
+            tabindex="0"
+          >
+            <!--mmmmmmmmmmmmm custom styling  of the workspace mmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row mb-0 w-100 flex-lg-row mt-5">
+              <div class="p-2">
+                <img
+                  src="assets/work1.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/work2.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <!--mmmmmmmmmmmmmmmmmmm gallery flex wrappers  mmmmmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/work3.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/work4.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/work5.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/work6.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+
+            <!--mmmmmmmmmmmmm custom styling  of workspace mmmmmmmmmmmmmmm-->
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-room"
+            role="tabpanel"
+            aria-labelledby="v-pills-room-tab"
+            tabindex="0"
+          >
+            <!--mmmmmmmmmmmmm custom styling  of the living room mmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row mb-0 w-100 flex-lg-row mt-5">
+              <div class="p-2">
+                <img
+                  src="assets/room1.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/room2.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <!--mmmmmmmmmmmmmmmmmmm gallery flex wrappers  mmmmmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/room3.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/room4.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/room5.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/room6.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+
+            <!--mmmmmmmmmmmmm custom styling  of living room mmmmmmmmmmmmmmm-->
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-kitchen"
+            role="tabpanel"
+            aria-labelledby="v-pills-kitchen-tab"
+            tabindex="0"
+          >
+            <!--mmmmmmmmmmmmm custom styling  of kitchen mmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row mb-0 w-100 flex-lg-row mt-5">
+              <div class="p-2">
+                <img
+                  src="assets/kitchen1.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/kitchen2.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <!--mmmmmmmmmmmmmmmmmmm gallery flex wrappers  mmmmmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/kitchen3.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/kitchen4.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/kitchen5.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/kitchen6.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <!--mmmmmmmmmmmmm custom styling  of kitchen mmmmmmmmmmmmmmm-->
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-living"
+            role="tabpanel"
+            aria-labelledby="v-pills-living-tab"
+            tabindex="0"
+          >
+            <!--mmmmmmmmmmmmm custom styling  of the livingspace mmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row mb-0 w-100 flex-lg-row mt-5">
+              <div class="p-2">
+                <img
+                  src="assets/room3.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/room1.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <!--mmmmmmmmmmmmmmmmmmm gallery flex wrappers  mmmmmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/room6.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/room2.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/living4.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/room4.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <!--mmmmmmmmmmmmm custom styling  of livingspace mmmmmmmmmmmmmmm-->
+          </div>
+
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-categories"
+            role="tabpanel"
+            aria-labelledby="pills-categories-tab"
+            tabindex="0"
+          >
+            <!--mmmmmmmmmmmmm custom styling  of the categories mmmmmmmmmmmmmmm-->
+
+            <div class="d-flex flex-row mb-0 w-100 flex-lg-row mt-5">
+              <div class="p-2">
+                <img
+                  src="assets/kitchen4.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/work1.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <!--mmmmmmmmmmmmmmmmmmm gallery flex wrappers  mmmmmmmmmmmmmmmmmm-->
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/meeting2.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/living4.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-row w-100">
+              <div class="p-2">
+                <img
+                  src="assets/bed3.jpg"
+                  alt="project gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+              <div class="p-2">
+                <img
+                  src="assets/dinning6.jpg"
+                  alt="food gallery"
+                  width="400"
+                  height="170"
+                />
+              </div>
+            </div>
+
+            <!--mmmmmmmmmmmmm custom styling  of the categories mmmmmmmmmmmmmmm-->
           </div>
         </div>
       </div>
