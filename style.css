@@ -4,3 +4,59 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
 }
+/* mmmmmmmmmmmmmmmm luxury styling mmmmmmmmmmmmmmmm*/
+.lux-wrapper {
+  position: relative;
+}
+.lux {
+  width: 100%;
+  height: 100%;
+}
+.lux-cover {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 98%;
+  height: 96%;
+  cursor: pointer;
+  transition: 3s ease;
+  opacity: 0;
+}
+
+.lux-text {
+  color: white;
+  margin: 20px;
+}
+.lux-cover:hover {
+  opacity: 1;
+}
+/* mmmmmmmmmmmmmmmm Decor styling mmmmmmmmmmmmmmmm*/
+.deco-wrapper {
+  position: relative;
+}
+.deco {
+  width: 100%;
+  height: 100%;
+}
+.deco-cover {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 98%;
+  height: 96%;
+  cursor: pointer;
+  transition: 4s ease;
+  opacity: 0;
+}
+
+.deco-text {
+  color: white;
+  margin: 20px;
+}
+.deco-cover:hover {
+  opacity: 1;
+}
