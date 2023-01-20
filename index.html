@@ -1083,34 +1083,52 @@
           </div>
         </div>
       </section>
+
       <section class="container topPopular">
         <h4 class="text-center fs-1">Popular Products</h4>
-        <div class="mt-5 d-flex flex-lg-row justify-content-between">
+        <div
+          class="mt-5 d-flex flex-lg-row justify-content-between flex-column-reverse"
+        >
           <div class="flex-fill me-5 centeredBtn">
             <a
+              id="center"
               href="#gallery"
               role="button"
               class="btn btn-outline-warning rounded-0 text-dark px-4 py-2"
               >See More</a
             >
           </div>
-          <div class="d-flex negative-margin flex-grow-1">
-            <div class="p-2 relative">
-              <img src="assets/dinning5.jpg" alt="" width="340" height="450" />
+          <div
+            class="d-flex negative-margin flex-grow-1 flex-lg-row flex-column justify-content-lg-between justify-content-around flex-md-row"
+          >
+            <div class="p-2 relative d-block d-md-none d-lg-block">
+              <img
+                src="assets/dinning5.jpg"
+                alt="Popular Products"
+                width="340"
+                height="450"
+                class="imgSize"
+              />
               <div class="position">
                 <h4 class="fs-2 fw-bold ms-2">Armchair</h4>
                 <div class="flex">
-                  <div class="ms-2">
+                  <div class="ms-lg-2">
                     <p class="text-light">Light single chair</p>
                   </div>
-                  <div class="text-light" style="margin-left: 130px">
+                  <div class="text-light left" style="margin-left: 130px">
                     <p>$145</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="p-2 relative">
-              <img src="assets/chair1.jpg" alt="" width="340" height="400" />
+              <img
+                src="assets/chair1.jpg"
+                alt="Popular Products"
+                width="340"
+                height="400"
+                class="imgSize"
+              />
               <div class="positions">
                 <h4 class="fs-2 fw-bold ms-2 text-light">Premium sofa</h4>
                 <div class="flex">
@@ -1124,7 +1142,13 @@
               </div>
             </div>
             <div class="p-2 relative">
-              <img src="assets/chair.jpg" alt="" width="300" height="350" />
+              <img
+                src="assets/chair.jpg"
+                alt="Popular Products"
+                width="300"
+                height="350"
+                class="imgSize"
+              />
               <div class="post">
                 <h4 class="fs-2 fw-bold ms-2 text-light">Minimal sofa</h4>
                 <div class="flex">
@@ -1138,6 +1162,95 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!--mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm 
+        special packages
+         mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm-->
+      <section class="topPopular container">
+        <h4 class="display-6 text-center">Special Packages</h4>
+        <div class="mt-5 row">
+          <div class="p-2 col-lg-5 col-12">
+            <img
+              src="assets/bed5.jpg"
+              alt="packages-img"
+              class="w-100"
+              height="450"
+            />
+            <div class="d-flex justify-content-between mt-2">
+              <div>
+                <h4 class="fs-2">Bolzen letti 2021 <br />Collection</h4>
+
+                <span class="text-warning"> <i class="fa fa-star"></i></span
+                ><span class="text-warning"> <i class="fa fa-star"></i></span
+                ><span class="text-warning"> <i class="fa fa-star"></i></span
+                ><span class="text-warning"> <i class="fa fa-star"></i></span
+                ><span class="text-warning"> <i class="fa fa-star"></i></span>
+                <p class="fs-5 fw-bold">$365</p>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-outline-warning rounded-0 text-dark px-4"
+                >
+                  Add to cart <i class="fa fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 col-lg-7 col-12">
+            <h6 class="fs-3 fw-bold">Discription</h6>
+            <p class="text-nowrap d-lg-block d-none">
+              Living Design ia about creating high-perfomance places that
+              promate human and
+              <br />
+              ecological well-being at every level. It's been one year since we
+              introduce our <br />
+              living Design framework to the world. And-wow!-what a year it's
+              been. The global <br />
+              pandemic showed each of us just how important living Design is to
+              the vitality of our <br />
+              planet and society.
+            </p>
+            <!--mmmmmmmmmmmmmm to show on small screens mmmmmmmmmmmmmm -->
+            <p class="text-wrap d-lg-none d-block">
+              Living Design ia about creating high-perfomance places that
+              promate human and ecological well-being at every level. It's been
+              one year since we introduce our living Design framework to the
+              world. And-wow!-what a year it's been. The global pandemic showed
+              each of us just how important living Design is to the vitality of
+              our planet and society.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-warning text-dark border-top-0 px-4 py-2 border-start-0 border-end-0"
+            >
+              See More
+            </button>
+            <!--mmmmmmmmmmmmmmmmmmmmm second flex in sub flex container mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+            <div class="d-flex flex-lg-row justify-content-between mt-4 p-1">
+              <div class="p-2 flex-fill">
+                <img src="assets/bed1.jpg" alt="packages-img" class="size" />
+              </div>
+              <div class="p-2 flex-fill">
+                <img
+                  src="assets/living4.jpg"
+                  alt="packages-img"
+                  class="sizeImg"
+                />
+              </div>
+              <div class="p-2 flex-fill d-none d-lg-block d-md-block">
+                <img
+                  src="assets/room4.jpg"
+                  alt="packages-img"
+                  class="sizeImg"
+                />
+              </div>
+            </div>
+            <!-- end of second  flexline -->
+          </div>
+          <!-- end of flexline -->
         </div>
       </section>
     </main>

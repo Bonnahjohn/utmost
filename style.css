@@ -5,6 +5,9 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
 }
+p {
+  font-size: 16px;
+}
 /* mmmmmmmmmmmmmmmm luxury styling mmmmmmmmmmmmmmmm*/
 .lux-wrapper {
   position: relative;
@@ -214,7 +217,42 @@ button.nav-link {
 
 @media screen and (width: 1440px) {
   .negative-margin {
-    margin-right: -1%;
+    margin-right: -12%;
+  }
+}
+/* @media screen and (width: 768px) {
+  .negative-margin {
+    margin-right: -19%;
+  }
+} */
+/* for small screens only */
+@media screen and (max-width: 768px) {
+  .negative-margin {
+    margin-right: 0;
+  }
+  .imgSize {
+    width: 400px;
+    height: 450px;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 390px;
+  }
+  /*mmmmmmmmmmmmmmmmmmmmmmm popular products mmmmmmmmmmmmmmmmm */
+  /* second image */
+  .positions {
+    position: absolute;
+    top: 83%;
+  }
+  /* last image */
+  .post {
+    position: absolute;
+    top: 83%;
+  }
+  #center {
+    margin-top: 25px;
   }
 }
 
@@ -241,4 +279,21 @@ button.nav-link {
   display: flex;
   justify-content: space-between;
   align-content: space-around;
+}
+
+/* special packages */
+.size {
+  width: 190px;
+  height: 240px;
+}
+.sizeImg {
+  width: 180px;
+  height: 200px;
+}
+
+/* text to show on mobile screens */
+@media screen and (max-width: 768) {
+  .descript {
+    /* overflow-wrap: break-word; */
+  }
 }
