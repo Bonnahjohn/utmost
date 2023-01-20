@@ -55,3 +55,11 @@ buttonMore.addEventListener("click", () => {
     containers.style.height = "420px";
   }
 });
+
+// gallery button\
+const allBtn = document.getElementById("allBtn");
+const allPara = document.querySelector(".allPara");
+
+allBtn.addEventListener("click", () => {
+  allPara.textContent = "Products page is not available  for now !!!!";
+});
