@@ -292,8 +292,17 @@ button.nav-link {
 }
 
 /* text to show on mobile screens */
-@media screen and (max-width: 768) {
-  .descript {
-    /* overflow-wrap: break-word; */
-  }
+/* @media screen and (max-width: 768) {
+
+} */
+
+.coverOverlay {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 190px;
+  height: 209px;
 }
