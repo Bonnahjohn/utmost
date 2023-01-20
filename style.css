@@ -196,4 +196,49 @@ button.nav-link {
     padding-left: 0;
     padding-top: 50;
   }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm popular image gallery mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+.topPopular {
+  margin-top: 8%;
+}
+.negative-margin {
+  margin-right: -15%;
+}
+.centeredBtn {
+  margin: auto;
+}
+
+@media screen and (width: 1440px) {
+  .negative-margin {
+    margin-right: -1%;
+  }
+}
+
+.relative {
+  position: relative;
+  width: 50%;
+}
+
+.position {
+  position: absolute;
+  bottom: 0;
+}
+/* second image */
+.positions {
+  position: absolute;
+  bottom: 10%;
+}
+/* last image */
+.post {
+  position: absolute;
+  bottom: 20%;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
 }
