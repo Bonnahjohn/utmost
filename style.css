@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 p {
   font-size: 16px;
@@ -88,7 +89,7 @@ button.nav-link {
 .wrapper img {
   display: block;
   width: 400px;
-  height: 170px;
+  height: 176px;
 }
 .sub-wrapper {
   position: absolute;
@@ -217,7 +218,10 @@ button.nav-link {
 
 @media screen and (width: 1440px) {
   .negative-margin {
-    margin-right: -9%;
+    margin-right: -5%;
+  }
+  .bgColor {
+    width: 100%;
   }
 }
 /* @media screen and (width: 768px) {
@@ -311,7 +315,7 @@ button.nav-link {
 .bgColor {
   height: 330px;
   background: rgba(21, 21, 53, 0.918);
-  width: 100%;
+  width: 100vw;
 }
 
 label {
@@ -362,3 +366,34 @@ input {
 }
 
 /*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm image gallerymmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+@media screen and (min-width: 1440px) {
+  .fixed {
+    width: 510px;
+  }
+  .negative-margin {
+    margin-right: -11%;
+  }
+}
+
+@media screen and (width: 768px) {
+  .mdScreen {
+    width: 700px;
+  }
+  .mdScreenSub {
+    width: 392px;
+  }
+  .mdScreenSubs {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .mdScreen {
+    width: 390px;
+  }
+  .mdScreenSub {
+    width: 240px;
+  }
+  .mdScreenSubs {
+    width: 140px;
+  }
+}
