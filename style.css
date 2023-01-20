@@ -119,3 +119,81 @@ button.nav-link {
 .text-wrapper > button {
   border-radius: 0px;
 }
+
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm sleep luxury read more button mmmmmmmmmmmmmmmmmmmmmmmmm*/
+.more {
+  display: none;
+}
+.moretext {
+  display: none;
+}
+/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm sleep luxury positiions mmmmmmmmmmmmmmmmmmmmmmmmm*/
+.cover {
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  width: 320px;
+  height: 320px;
+  padding-left: 30px !important;
+  padding-top: 50px !important;
+}
+
+.coverAbsolute {
+  position: absolute;
+  top: 50%;
+  left: 130%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.coverAbsolute img {
+  width: 280px;
+  height: 210px;
+}
+
+.contain {
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  width: 320px;
+  height: 320px;
+  right: 20%;
+  padding-left: 30px !important;
+  padding-top: 50px !important;
+}
+
+@media screen and (width: 1024px) {
+  .contain {
+    position: relative;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    width: 320px;
+    height: 320px;
+    right: 9%;
+    padding-left: 30px !important;
+    padding-top: 50px !important;
+  }
+  .coverAbsolute {
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* medaia query */
+@media screen and (max-width: 768px) {
+  .cover {
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 0;
+    align-items: center;
+  }
+  .contain {
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 50;
+  }
+}

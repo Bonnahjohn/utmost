@@ -13,7 +13,7 @@
     <!-- mmmmmmmmmmmmmmmmmmmm   luxur flex image mmmmmmmmmmmmmmmmmm -->
     <section class="container mt-5">
       <div
-        class="d-flex flex-lg-row flex-md-row flex-column flex-column justify-content-around"
+        class="d-flex flex-lg-row flex-md-row flex-column justify-content-lg-between justify-content-between"
       >
         <div class="p-2 lux-wrapper flex-fill">
           <img
@@ -54,11 +54,11 @@
       </div>
     </section>
     <!-- mmmmmmmmmmmmmmmmmmmm   explore by category mmmmmmmmmmmmmmmmmm -->
-    <section class="container exp-top">
+    <section class="container exp-top d-lg-block d-none">
       <h3 class="text-center display-5">Explore by category</h3>
       <!-- flex picture tabs -->
       <div
-        class="d-flex align-items-start justify-content-lg-between justify-content-around justify-content-md-around"
+        class="d-lg-flex align-items-start justify-content-lg-between justify-content-around justify-content-md-between flex-lg-row flex-column"
       >
         <div
           class="nav flex-column nav-tabs me-3 border-0"
@@ -864,7 +864,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p-wrapper">
+              <div class="p-2 wrapper">
                 <img src="assets/room2.jpg" alt="food gallery" />
                 <div class="sub-wrapper">
                   <div class="text-wrapper">
@@ -1018,6 +1018,71 @@
         </div>
       </div>
     </section>
+
+    <!--mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+   sleep luxury image styling
+ mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+    <section class="container mt-5">
+      <div
+        class="d-flex flex-lg-row flex-column justify-content-lg-between flex-md-row justify-content-md-between justify-content-between"
+      >
+        <div class="px-lg-2 p-2 p-lg-0 cover px-5">
+          <h4 class="fs-2">
+            Canada Home <br />
+            Festival <span class="fs-5">2021</span>
+          </h4>
+          <p>
+            Creck out our top picks <br />
+            from this year's Canada <br />
+            Home Festival<span class="dot">.</span>
+            <span class="more"
+              >Lorem dolor <br />
+              amet consectetur elit. <br />Id exercitationem <br />
+              quisquam accusantium <br />
+              nam magni cumque et!</span
+            >
+          </p>
+          <!--mmmmmmmmmmmmmmmmm show on small screens only mmmmmmmmmmmmmmm -->
+          <button
+            type="button"
+            class="btn btn-outline-warning rounded-0 text-dark px-4 py-2 morebtn"
+          >
+            Read More
+          </button>
+          <div class="coverAbsolute d-lg-block d-none">
+            <img src="assets/room1.jpg" alt="postion-img" />
+          </div>
+        </div>
+        <!--mmmmmmmmmmmmmmmmmmmmmmmmmmmmm second flex item mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm-->
+        <div
+          class="p-lg-2 p-2 mt-3 mt-md-0 ms-md-3 ms-0 mt-lg-0 contain px-lg-0 px-5"
+        >
+          <h4 class="fs-2">Sleep in luxury</h4>
+          <p>
+            Deep into pure comfort <br />
+            with bedroom and <br />
+            beddings that will give <br />you that perfect <br />right's
+            sleep<span class="dots">.</span>
+            <span class="moretext"
+              >Lorem dolor <br />
+              amet consectetur elit. <br />Id exercitationem <br />
+              quisquam accusantium <br />
+              nam magni cumque et!</span
+            >
+          </p>
+          <button
+            type="button"
+            class="btn btn-outline-warning rounded-0 text-dark px-4 py-2 showbtn"
+          >
+            Read More
+          </button>
+          <div class="coverAbsolute d-lg-block d-none">
+            <img src="assets/bed.jpg" alt="position-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
     <script <script src="app.js"></script>
   </body>
