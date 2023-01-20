@@ -1230,10 +1230,12 @@
             </button>
             <!--mmmmmmmmmmmmmmmmmmmmm second flex in sub flex container mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
             <div class="d-flex flex-lg-row justify-content-between mt-4 p-1">
-              <div class="p-2 flex-fill">
+              <div class="p-2 flex-fill d-lg-block d-md-block d-none">
                 <img src="assets/bed1.jpg" alt="packages-img" class="size" />
               </div>
-              <div class="p-2 flex-fill position-relative">
+              <div
+                class="p-2 flex-fill position-relative d-lg-block d-md-block d-none"
+              >
                 <img
                   src="assets/living4.jpg"
                   alt="packages-img"
@@ -1255,6 +1257,55 @@
             <!-- end of second  flexline -->
           </div>
           <!-- end of flexline -->
+        </div>
+      </section>
+      <!--mmmmmmmmmmmmmmmmmmmmmmmmmm didcount on orders section mmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+      <section class="bgColor topPopular">
+        <div class="container">
+          <div class="row grid">
+            <div class="col-lg-5 d-lg-block d-none postCover">
+              <img src="assets/room4.jpg" alt="Order-img" class="posts" />
+            </div>
+            <div class="p-lg-2 mt-4 col-lg-7 col-12">
+              <h5 class="fs-2 text-light">
+                Get a 20% discount on any order <br />
+                before March 1
+              </h5>
+              <p class="text-light">
+                Leave a request and our manager will call you back
+              </p>
+              <form id="send">
+                <div class="d-flex">
+                  <div class="p-2">
+                    <label for="name"
+                      ><input
+                        type="text"
+                        name="name"
+                        class="form-control-plaintext labelInput"
+                      />Your Name</label
+                    >
+                  </div>
+                  <div class="p-2">
+                    <label for="tel"
+                      ><input
+                        type="tel"
+                        name="tel"
+                        class="form-control-plaintext labelInputs"
+                        autocomplete="tel-country-code"
+                      />Your Phone No.</label
+                    >
+                  </div>
+                </div>
+                <div class="p-2">
+                  <input
+                    type="submit"
+                    value="Send Application"
+                    class="btn btn-outline-warning rounded-0 px-4 py-2 text-light"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
