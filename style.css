@@ -6,6 +6,17 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+.navs {
+  background-color: transparent;
+  height: 64px;
+  transition: all 3s ease;
+}
+.navs.toggle {
+  background: rgba(0, 0, 0, 0.5);
+
+  backdrop-filter: grayscale(60%);
+  box-shadow: 5px 6px 6px rgba(100, 100, 100, 100);
+}
 p {
   font-size: 16px;
 }
