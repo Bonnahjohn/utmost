@@ -397,3 +397,9 @@ input {
     width: 140px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .topPopular {
+    margin-top: 20%;
+  }
+}
