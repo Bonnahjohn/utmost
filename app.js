@@ -63,3 +63,9 @@ const allPara = document.querySelector(".allPara");
 allBtn.addEventListener("click", () => {
   allPara.textContent = "Products page is not available  for now !!!!";
 });
+
+// footer
+const year = document.getElementById("year");
+let getDate = new Date();
+
+year.innerHTML = getDate.getFullYear();
