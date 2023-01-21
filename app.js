@@ -69,3 +69,65 @@ const year = document.getElementById("year");
 let getDate = new Date();
 
 year.innerHTML = getDate.getFullYear();
+
+// carousel manipulation
+
+const reviews = [
+  {
+    id: 1,
+    Image: "assets/bed1.jpg",
+    text: `I was for a perfect interior solution for my 
+              new home. I'm using Furntick as my home interior  
+              method and I will recomanded everyone who needs  a best house
+              interior.`,
+    person: "john Bonnah",
+  },
+  {
+    id: 2,
+    Image: "assets/bed3.jpg",
+    text: `I was for a perfect interior solution for my 
+              new home. I'm using Furntick as my home interior 
+              method and I will recomanded everyone who needs  a best house
+              interior.`,
+    person: "john Bonnah poku",
+  },
+];
+
+const Image = document.getElementById("imgs");
+const info = document.getElementById("text");
+const personal = document.getElementById("name");
+
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+// starting item number
+let currentItem = 3;
+
+window.addEventListener("DOMContentLoaded", () => {
+  showPerson(currentItem);
+});
+
+function showPerson(persons) {
+  const item = reviews[persons];
+  Image.src = item.Image;
+  info.textContent = item.text;
+  personal.textContent = item.person;
+}
+
+nextBtn.addEventListener("click", () => {
+  currentItem++;
+  if (currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  console.log("forward");
+  showPerson[currentItem];
+});
+
+prevBtn.addEventListener("click", () => {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  console.log("back");
+  showPerson[currentItem];
+});
