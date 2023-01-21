@@ -235,11 +235,7 @@ button.nav-link {
     width: 100%;
   }
 }
-/* @media screen and (width: 768px) {
-  .negative-margin {
-    margin-right: -19%;
-  }
-} */
+
 /* for small screens only */
 @media screen and (max-width: 768px) {
   .negative-margin {
@@ -305,11 +301,6 @@ button.nav-link {
   width: 180px;
   height: 200px;
 }
-
-/* text to show on mobile screens */
-/* @media screen and (max-width: 768) {
-
-} */
 
 .coverOverlay {
   position: absolute;
